@@ -1,3 +1,6 @@
 .story {
     background-color: fuchsia;
+
+    grid-column: center-start / center-end;
+    grid-row: 2;
 }
