@@ -27,22 +27,29 @@
                 <span class="sidebar__icon__display"></span>
             </button>
             <ul class="sidebar__items">
-                <li class="sidebar__item sidebar__item--mystory" onclick="toggleSidebar()"><a class="sidebar__item--link" href="#story">My Story</a></li>
-                <li class="sidebar__item sidebar__item--experience" onclick="toggleSidebar()"><a class="sidebar__item--link" href="#experience">Experience</a></li>
-                <li class="sidebar__item sidebar__item--resume" onclick="toggleSidebar()"><a class="sidebar__item--link" href="#resume">Resume</a></li>
-                <li class="sidebar__item sidebar__item--contact" onclick="toggleSidebar()"><a class="sidebar__item--link" href="#contact">Contact</a></li>
+                <li class="sidebar__item sidebar__item--mystory"><a class="sidebar__item--link" href="#story">My Story</a></li>
+                <li class="sidebar__item sidebar__item--experience"><a class="sidebar__item--link" href="#experience">Experience</a></li>
+                <li class="sidebar__item sidebar__item--resume"><a class="sidebar__item--link" href="#resume">Resume</a></li>
+                <li class="sidebar__item sidebar__item--contact"><a class="sidebar__item--link" href="#contact">Contact</a></li>
             </ul>
         </div> 
         <div class="story" id="story">
-            myStory
-            <div class="story__past">
-                    past
+            <div class="story__title">
+                <h1><u>My Story</u></h1>
             </div>
-            <div class="story__present">
-                present
+            <div class="story__past">
+                <h2>The Past</h2>
+                <p>
+                    Explain some stuff about your past and what you have done up to this point.
+                    Explain some stuff about your past and what you have done up to this point.
+                </p>
             </div>
             <div class="story__future">
-                future
+                <h2>The Future</h2>
+                <p>
+                    Explain where you want to go from here, what your goals are and how you plan to achieve them.
+                    Explain where you want to go from here, what your goals are and how you plan to achieve them.
+                </p>
             </div>
         </div>
         <div class="experience" id="experience">
@@ -52,7 +59,14 @@
             resume
         </div>
         <div class="contact" id="contact">
-            contact
+            <div class="contact__form">
+                <form action="submit">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message" rows="4"></textarea>
+                    <button class="contact__form__submit">Submit</button>
+                </form>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer__copyright">

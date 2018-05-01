@@ -48,20 +48,51 @@ body {
   .header__text {
     color: #fff;
     font-size: 5rem;
-    text-align: center; }
+    text-align: center;
+    transform: translateY(-10rem); }
 
 .story {
-  background-color: fuchsia;
   grid-column: sidebar-start / full-end;
   grid-row: 2 / span 2;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr); }
+  .story__title {
+    grid-row: 2;
+    grid-column: 8 / span 3; }
+  .story__past {
+    grid-row: 3;
+    grid-column: 3 / span 4; }
+  .story__future {
+    grid-row: 6;
+    grid-column: 6 / span 4; }
 
 .contact {
   background-color: red;
   grid-column: sidebar-start / full-end;
-  grid-row: 6; }
+  grid-row: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__form {
+    width: 30rem;
+    box-sizing: border-box; }
+    .contact__form input,
+    .contact__form textarea {
+      width: 100%;
+      padding: .5rem;
+      margin: .5rem;
+      border-radius: .5rem;
+      font-size: inherit;
+      font-family: inherit; }
+    .contact__form textarea {
+      height: 15rem; }
+    .contact__form__submit {
+      padding: .5rem 1rem;
+      margin: .5rem;
+      outline: none;
+      border: none;
+      float: right; }
 
 .sidebar {
   background-color: rgba(0, 0, 0, 0.8);
@@ -74,11 +105,12 @@ body {
   .sidebar__icon {
     height: 5rem;
     width: 5rem;
-    background-color: silver;
+    background-color: white;
     border-radius: 100%;
     cursor: pointer;
     position: fixed;
     margin-top: 5rem;
+    outline: none;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -97,10 +129,6 @@ body {
         top: -.8rem; }
       .sidebar__icon__display::after {
         top: .8rem; }
-  .sidebar__icon:hover .sidebar__display::before {
-    top: -1rem; }
-  .sidebar__icon:hover .sidebar__display::after {
-    top: 1rem; }
   .sidebar--active {
     grid-column: sidebar-start / center-start; }
   .sidebar__items {
@@ -126,6 +154,10 @@ body {
       transition: .4s; }
     .sidebar__item--link:active {
       transform: translateX(0.5rem); }
+
+h2 {
+  font-family: inherit;
+  color: black; }
 
 .resume {
   grid-column: sidebar-start / full-end;

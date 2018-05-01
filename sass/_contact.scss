@@ -3,4 +3,36 @@
 
     grid-column: sidebar-start / full-end;
     grid-row: 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form {
+        width: 30rem;
+        box-sizing: border-box;
+
+        input, 
+        textarea {
+            width: 100%;
+            padding:.5rem;
+            margin: .5rem;
+            border-radius: .5rem;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        textarea {
+            height: 15rem;
+        }
+
+        &__submit {
+            padding: .5rem 1rem;
+            margin: .5rem;
+            outline: none;
+            border: none;
+            float: right;
+        }
+    }
 }
+

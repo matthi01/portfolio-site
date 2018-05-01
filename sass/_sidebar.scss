@@ -12,11 +12,12 @@
     &__icon {
         height: 5rem;
         width: 5rem;
-        background-color: silver;
+        background-color: white;
         border-radius: 100%;
         cursor: pointer;
         position: fixed;
         margin-top: 5rem;
+        outline: none;
 
         display: flex;
         justify-content: center;
@@ -44,9 +45,6 @@
             &::after { top: .8rem; }
         }
     }
-
-    &__icon:hover &__display::before { top: -1rem; }
-    &__icon:hover &__display::after { top: 1rem; }
 
     &--active {
         grid-column: sidebar-start / center-start
