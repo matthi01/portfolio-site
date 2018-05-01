@@ -1,7 +1,7 @@
 .story {
     background-color: fuchsia;
 
-    grid-column: full-start / full-end;
+    grid-column: sidebar-start / full-end;
     grid-row: 2 / span 2;
 
     display: grid;

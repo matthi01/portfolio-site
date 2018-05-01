@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: $color-primary--dark;
+    background-color: rgba($color-primary--dark, .8);
     z-index: 1;
 
     grid-column: sidebar-start / sidebar-end;
@@ -10,14 +10,43 @@
     align-items: center;
 
     &__icon {
-        height: 3.5rem;
-        width: 3.5rem;
-        background-color: grey;
+        height: 5rem;
+        width: 5rem;
+        background-color: silver;
         border-radius: 100%;
         cursor: pointer;
         position: fixed;
         margin-top: 5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__display {
+            position: relative;
+            &, 
+            &::before,
+            &::after {
+                width: 2rem;
+                height: 2px;
+                background-color: black;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
+
+            &::before { top: -.8rem; }
+            &::after { top: .8rem; }
+        }
     }
+
+    &__icon:hover &__display::before { top: -1rem; }
+    &__icon:hover &__display::after { top: 1rem; }
 
     &--active {
         grid-column: sidebar-start / center-start
@@ -39,16 +68,25 @@
         display: block;
         background-color: #2b2b30;
         cursor: pointer;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: $color-primary--light;
+        text-transform: uppercase;
+        
 
         &:link,
         &:visited {
-            text-decoration: none;
-            color: $color-primary--light;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, grey 50%);
+            background-size: 220%;
+        }
+
+        &:hover {
+            background-position: 100%;
+            transition: .4s;
         }
 
         &:active {
-            transform: translateY(3px);
+            transform: translateX(.5rem);
         }
     }
 }
