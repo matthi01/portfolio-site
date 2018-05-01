@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.experience {
+  background-color: orange; }
+
+.footer {
+  background-color: green; }
+
+.header {
+  background-color: blue; }
+
+.story {
+  background-color: fuchsia; }
+
+.contact {
+  background-color: red; }
+
+.sidebar {
+  background-color: deepskyblue; }
