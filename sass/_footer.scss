@@ -1,6 +1,7 @@
 .footer {
-    background-color: green;
+    background-color: $color-secondary--dark;
+    clip-path: polygon(50% 50%, 100% 35%, 100% 100%, 0 100%, 0 35%);
 
     grid-column: full-start / full-end;
-    grid-row: 5;
+    grid-row: 7;
 }
