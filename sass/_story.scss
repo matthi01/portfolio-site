@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    font-size: 1.4rem;
 
     &__title {
         grid-row: 2;

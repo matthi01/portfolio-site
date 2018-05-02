@@ -1,7 +1,6 @@
 
 
 const toggleSidebar = () => {
-    console.log("sidebar clicked");
 
     let sidebar = document.querySelector(".sidebar");
     let sidebarItems = document.querySelector(".sidebar__items");
@@ -14,4 +13,16 @@ const toggleSidebar = () => {
         sidebarItems.style.visibility = "hidden";
     }
     
+};
+
+const sendEmail = (e) => {
+    e.preventDefault();
+    
+    const name = document.getElementsByName("name")[0].value;
+    const email = document.getElementsByName("email")[0].value;
+    const message = document.getElementsByName("message")[0].value;
+    
+    console.log("name: " + name);
+    console.log("email: " + email);
+    console.log("message: " + message);
 };

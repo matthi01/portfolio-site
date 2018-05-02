@@ -1,10 +1,9 @@
 .header {
-    // background-color: black;
-   background-image: linear-gradient(rgba($color-secondary--light, .6), rgba($color-secondary--dark, .6)), url(../img/image1.JPG);
-   background-size: cover;
-   background-repeat: no-repeat;
-   clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-   z-index: 1;
+    background-image: linear-gradient(rgba($color-secondary--light, .6), rgba($color-secondary--dark, .6)), url(../img/image1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    z-index: 1;
 
 
     grid-column: sidebar-start / full-end;

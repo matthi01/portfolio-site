@@ -35,42 +35,48 @@
         </div> 
         <div class="story" id="story">
             <div class="story__title">
-                <h1><u>My Story</u></h1>
+                <h2>My Story</h2>
             </div>
             <div class="story__past">
-                <h2>The Past</h2>
+                <h3>The Past</h3>
                 <p>
-                    Explain some stuff about your past and what you have done up to this point.
-                    Explain some stuff about your past and what you have done up to this point.
+                    <b>Explain some stuff about your past and what you have done up to this point.</b>
+                    I graduated from the computer science program at Camosun College in 2012. For the last 6 years I worked as an implementation consultant 
+                    for <a href="http://www.fastenterprises.com" target="_blank">Fast Enterprises</a>. Fast provides large ERP tax solutions to governments.
+                    It was an awesome job, but once the size of the company expanded, the ability for developers to modify and customize the system diminished, and developers
+                    really started to take on a comsultant role instead of a developer role.<br />
+                    Problem is I enjoy being a developer. I had to make a choice, and I decided to leave to build up my skills in newer technologies.
                 </p>
             </div>
             <div class="story__future">
-                <h2>The Future</h2>
+                <h3>The Future</h3>
                 <p>
-                    Explain where you want to go from here, what your goals are and how you plan to achieve them.
-                    Explain where you want to go from here, what your goals are and how you plan to achieve them.
+                    <b>Explain where you want to go from here, what your goals are and how you plan to achieve them.</b>
+                    
                 </p>
             </div>
         </div>
         <div class="experience" id="experience">
-            experience
+            <div class="experience__title">
+                <h2>Experience</h2>
+            </div>
         </div>
         <div class="resume" id="resume">
             resume
         </div>
         <div class="contact" id="contact">
             <div class="contact__form">
-                <form action="submit">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Message" rows="4"></textarea>
-                    <button class="contact__form__submit">Submit</button>
+                <form>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                    <button class="contact__form__submit" onclick="sendEmail(event)">Submit</button>
                 </form>
             </div>
         </div>
         <footer class="footer">
             <div class="footer__copyright">
-                copyright
+                Matthias Ruhland 2018
             </div>
         </footer>
     </div>
