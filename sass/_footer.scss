@@ -1,7 +1,27 @@
 .footer {
     background-color: $color-secondary--dark;
-    clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0 100%, 0 0%);
-
     grid-column: sidebar-start / full-end;
     grid-row: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    &__btn__top {
+        border: 1px solid white;
+        align-self: center;
+        background-color: rgba($color-primary--dark, .7);
+        margin-bottom: 2.5rem;
+
+        &--link {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 1rem;
+        }
+    }
+
+    &__copyright {
+        align-self: center;
+    }
 }

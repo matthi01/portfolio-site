@@ -17,12 +17,8 @@ const toggleSidebar = () => {
 
 const sendEmail = (e) => {
     e.preventDefault();
-    
-    const name = document.getElementsByName("name")[0].value;
-    const email = document.getElementsByName("email")[0].value;
-    const message = document.getElementsByName("message")[0].value;
-    
-    console.log("name: " + name);
-    console.log("email: " + email);
-    console.log("message: " + message);
+
+    const email = "mruhland01@gmail.com";
+    const subject = "Portfolio Message";
+    window.open(`mailto:${email}?subject=${subject}`);
 };

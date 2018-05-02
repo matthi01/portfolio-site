@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     
 
     &__text {
@@ -20,7 +20,13 @@
         color: $color-primary--light;
         font-size: 5rem;
         text-align: center;
-        transform: translateY(-10rem);
+        transform: translateY(-22rem);
+        letter-spacing: 1.6rem;
+        text-transform: uppercase;
+
+        border: 2px solid white;
+        padding: 3rem;
+        background-color: rgba($color-secondary--dark, .7);
 
         &--name {
         

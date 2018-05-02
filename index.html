@@ -12,13 +12,13 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__text">
                 <div class="header__text--name">
                     Matthias Ruhland
                 </div>
                 <div class="header__text--title">
-                    Developer
+                    - Developer -
                 </div>
             </div>
         </header>
@@ -29,7 +29,7 @@
             <ul class="sidebar__items">
                 <li class="sidebar__item sidebar__item--mystory"><a class="sidebar__item--link" href="#story">My Story</a></li>
                 <li class="sidebar__item sidebar__item--experience"><a class="sidebar__item--link" href="#experience">Experience</a></li>
-                <li class="sidebar__item sidebar__item--resume"><a class="sidebar__item--link" href="#resume">Resume</a></li>
+                <li class="sidebar__item sidebar__item--skills"><a class="sidebar__item--link" href="#skills">Skills</a></li>
                 <li class="sidebar__item sidebar__item--contact"><a class="sidebar__item--link" href="#contact">Contact</a></li>
             </ul>
         </div> 
@@ -60,23 +60,32 @@
             <div class="experience__title">
                 <h2>Experience</h2>
             </div>
+            <div class="experience__grid">
+                <div class="experience__grid__card experience__grid__card--1">Javascript</div>
+                <div class="experience__grid__card experience__grid__card--2">NodeJS</div>
+                <div class="experience__grid__card experience__grid__card--3">ReactJS</div>
+                <div class="experience__grid__card experience__grid__card--4">HTML / CSS</div>
+                <div class="experience__grid__card experience__grid__card--5">VB.NET</div>
+                <div class="experience__grid__card experience__grid__card--6">SQL Server / MongoDB</div>
+                <div class="experience__grid__card experience__grid__card--7">Blockchain / Solidity</div>
+                <div class="experience__grid__card experience__grid__card--8">AWS Certified</div>
+            </div>
         </div>
-        <div class="resume" id="resume">
-            resume
+        <div class="skills" id="skills">
+            skills
         </div>
         <div class="contact" id="contact">
-            <div class="contact__form">
-                <form>
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" rows="4" required></textarea>
-                    <button class="contact__form__submit" onclick="sendEmail(event)">Submit</button>
-                </form>
+            contact
+            <div class="footer__social-media--links">
+                social media links
             </div>
         </div>
         <footer class="footer">
+            <div class="footer__btn__top">
+                <a class="footer__btn__top--link" href="#header">Top</a>
+            </div>
             <div class="footer__copyright">
-                Matthias Ruhland 2018
+                Matthias Ruhland &copy;2018
             </div>
         </footer>
     </div>
