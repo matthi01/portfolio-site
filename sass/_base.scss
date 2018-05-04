@@ -1,6 +1,6 @@
 
 
-// VARIABLES
+// VARIABLES - still need to set these up and actually use them
 $color-primary--light: #fff;
 $color-primary--dark: #000;
 $color-secondary--light: #a9a9aa;
@@ -20,6 +20,7 @@ $color-secondary--dark: #656568;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // percentage to deal with browser zoom - 1rem == 10px
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -33,16 +34,13 @@ body {
 
 .container {
     background-color: white;
-    // margin: 5rem auto;
-    // max-width: 120rem;
-    // box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
 
     display: grid;
-    grid-template-rows: 60vh 20vh 80vh 100vh 50vh 40vh 20vh;
+    grid-template-rows: 60vh 20vh minmax(max-content, 80vh) max-content 50vh 40vh 20vh;
     
     
-    grid-template-columns:  [sidebar-start] 8rem 
-                            [sidebar-end full-start] minmax(8rem, 1fr) 
+    grid-template-columns:  [sidebar-start] 8rem
+                            [sidebar-end full-start] 10rem 
                             [center-start] repeat(8, 
                             [col-start] minmax(min-content, 15rem) [col-end]) 
                             [center-end] minmax(5rem, 1fr) [full-end];

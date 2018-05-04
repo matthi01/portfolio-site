@@ -1,5 +1,6 @@
 .header {
-    background-image: linear-gradient(rgba($color-secondary--light, .6), rgba($color-secondary--dark, .6)), url(../img/image1.JPG);
+    // background-image: linear-gradient(rgba($color-secondary--light, .6), rgba($color-secondary--dark, .6)), url(../img/image1.JPG);
+    background-image: linear-gradient(rgba($color-test-light, .4), rgba($color-test-dark, .4)), url(../img/image2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -18,14 +19,15 @@
     &__text {
 
         color: $color-primary--light;
-        font-size: 5rem;
+        font-size: 3.5rem;
         text-align: center;
-        transform: translateY(-22rem);
+        transform: translateY(-20rem);
         letter-spacing: 1.6rem;
         text-transform: uppercase;
 
         border: 2px solid white;
         padding: 3rem;
+        margin-top: 10rem;
         background-color: rgba($color-secondary--dark, .7);
 
         &--name {

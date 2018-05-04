@@ -1,7 +1,14 @@
 .contact {
-    background-color: rgba($color-secondary--dark, .7);
+    background-image: linear-gradient(rgba($color-test-light, .7), rgba($color-test-dark, .7));
     clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+
+    color: black;
 
     grid-column: sidebar-start / full-end;
     grid-row: 6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
