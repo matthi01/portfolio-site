@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+    margin-top: -1px;
     
 
     &__btn__top {
@@ -26,6 +27,7 @@
     }
 
     &__copyright {
+        font-size: 1.2rem;
         align-self: center;
         color: white;
     }
