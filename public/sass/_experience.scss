@@ -27,6 +27,10 @@ $color-test-dark: rgb(13, 0, 129);
     @media only screen and (max-width: $bp-xxsmall) {
       margin-top: 15rem;
     }
+
+    @media only screen and (max-width: $bp-xxxsmall) {
+      margin-top: 35rem;
+    }
   }
 
   &__grid {

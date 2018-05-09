@@ -5,6 +5,7 @@ $color-secondary--light: #a9a9aa;
 $color-secondary--dark: #656568;
 
 $color-primary-font: #48494d;
+$color-text-link: #551a8b;
 
 $box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 
@@ -15,6 +16,7 @@ $bp-medium: 56.25em; // 900 px
 $bp-small: 46.875em; // 750 px
 $bp-xsmall: 37.5em; // 600 px
 $bp-xxsmall: 36.325em; // 580 px
+$bp-xxxsmall: 28em; // 450 px
 
 *,
 *::before,
@@ -88,7 +90,13 @@ body {
 
   @media only screen and (max-width: $bp-xxsmall) {
     grid-template-rows:
-      60vh 20vh 205rem 240rem minmax(50vh, min-content)
+      60vh 20vh 205rem 250rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-xxxsmall) {
+    grid-template-rows:
+      60vh 20vh 250rem 430rem minmax(50vh, min-content)
       40vh 20vh;
   }
 }
