@@ -4,6 +4,10 @@ $color-primary--dark: #000;
 $color-secondary--light: #a9a9aa;
 $color-secondary--dark: #656568;
 
+$color-primary-font: #48494d;
+
+$box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
 *,
 *::before,
 *::after {
@@ -16,6 +20,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // percentage to deal with browser zoom - 1rem == 10px
   font-family: "Quicksand", sans-serif;
+  color: $color-primary-font;
+  word-spacing: 0.3rem;
+  line-height: 1.5;
 }
 
 body {
@@ -31,7 +38,12 @@ body {
   background-color: white;
 
   display: grid;
-  grid-template-rows: 60vh 20vh minmax(max-content, 90vh) max-content 50vh 40vh 20vh;
+  grid-template-rows:
+    60vh 20vh minmax(max-content, 90vh) minmax(50vh, min-content) minmax(
+      50vh,
+      min-content
+    )
+    40vh 20vh;
 
   grid-template-columns:
     [sidebar-start] 8rem

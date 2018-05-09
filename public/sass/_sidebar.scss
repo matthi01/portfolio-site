@@ -59,6 +59,7 @@
     margin-top: 10rem;
     visibility: hidden;
     position: fixed;
+    user-select: none;
   }
 
   &__item {
