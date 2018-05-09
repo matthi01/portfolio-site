@@ -9,7 +9,7 @@ $color-primary-font: #48494d;
 $box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 
 // RESPONSIVE BREAKPOINTS
-$bp-xlarge: 69.375em; // 1110 px
+$bp-xlarge: 81.25em; // 1300 px
 $bp-large: 69.375em; // 1110 px
 $bp-medium: 56.25em; // 900 px
 $bp-small: 46.875em; // 750 px
@@ -62,7 +62,7 @@ body {
     [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end])
     [center-end] minmax(5rem, 1fr) [full-end];
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-xlarge) {
     grid-template-rows:
       60vh 20vh 112rem 125rem minmax(50vh, min-content)
       40vh 20vh;
