@@ -18,6 +18,15 @@ $color-test-dark: rgb(13, 0, 129);
 
   &__title {
     margin-bottom: 5rem;
+    margin-left: 6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-xxsmall) {
+      margin-top: 15rem;
+    }
   }
 
   &__grid {

@@ -75,6 +75,7 @@
     // color: $color-primary--light;
     color: #acb8ca;
     text-transform: capitalize;
+    user-select: none;
 
     &:link,
     &:visited {

@@ -8,6 +8,14 @@ $color-primary-font: #48494d;
 
 $box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 
+// RESPONSIVE BREAKPOINTS
+$bp-xlarge: 69.375em; // 1110 px
+$bp-large: 69.375em; // 1110 px
+$bp-medium: 56.25em; // 900 px
+$bp-small: 46.875em; // 750 px
+$bp-xsmall: 37.5em; // 600 px
+$bp-xxsmall: 36.325em; // 580 px
+
 *,
 *::before,
 *::after {
@@ -23,6 +31,10 @@ html {
   color: $color-primary-font;
   word-spacing: 0.3rem;
   line-height: 1.5;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -38,16 +50,45 @@ body {
   background-color: white;
 
   display: grid;
+  // grid-template-rows:
+  //   60vh 20vh 100rem minmax(50vh, max-content) minmax(50vh, min-content)
+  //   40vh 20vh;
   grid-template-rows:
-    60vh 20vh minmax(max-content, 90vh) minmax(50vh, min-content) minmax(
-      50vh,
-      min-content
-    )
+    60vh 20vh 100rem 110rem minmax(50vh, min-content)
     40vh 20vh;
-
   grid-template-columns:
     [sidebar-start] 8rem
     [sidebar-end full-start] 10rem
     [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end])
     [center-end] minmax(5rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows:
+      60vh 20vh 112rem 125rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows:
+      60vh 20vh 112rem 145rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows:
+      60vh 20vh 166rem 175rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-xsmall) {
+    grid-template-rows:
+      60vh 20vh 205rem 190rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-xxsmall) {
+    grid-template-rows:
+      60vh 20vh 205rem 240rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
 }
