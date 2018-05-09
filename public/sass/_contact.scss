@@ -1,25 +1,26 @@
 .contact {
-    background-image: linear-gradient(rgba($color-test-light, .7), rgba($color-test-dark, .7));
-    clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+  background-image: linear-gradient(
+    rgba($color-test-light, 0.7),
+    rgba($color-test-dark, 0.7)
+  );
+  clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 
-    color: black;
+  color: black;
 
-    grid-column: sidebar-start / full-end;
-    grid-row: 6;
+  grid-column: sidebar-start / full-end;
+  grid-row: 6;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-
-    &__social-media__links {
-
-        &--icon {
-            height: 3.5rem;
-            width: 3.5rem;
-            margin: 2.5rem 1rem;
-            cursor: pointer;
-        }
+  &__social-media__links {
+    &--icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin: 2.5rem 1rem;
+      cursor: pointer;
     }
+  }
 }

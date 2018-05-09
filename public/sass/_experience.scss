@@ -1,57 +1,60 @@
-
 $color-test-light: #ffffff;
 $color-test-dark: rgb(13, 0, 129);
 
 .experience {
-    padding: 25rem 10rem;
-    background-image: linear-gradient(to right bottom, rgba($color-test-light, 1), rgba($color-test-dark, 1));
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 25rem 10rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-test-light, 1),
+    rgba($color-test-dark, 1)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    grid-column: sidebar-start / full-end;
-    grid-row: 4;
+  grid-column: sidebar-start / full-end;
+  grid-row: 4;
 
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 
-    
+  &__title {
+    margin-bottom: 5rem;
+  }
 
-    &__title {
-        margin-bottom: 5rem;
+  &__grid {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+      background-color: white;
+      transition: all 0.1s;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+      height: 20rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &--icon {
+        height: 10rem;
+        width: 10rem;
+      }
+
+      &--label {
+        display: block;
+        padding: 0.5rem;
+        color: white;
+        border: 1px solid black;
+        background-color: #23236b;
+        margin-top: 3rem;
+      }
     }
-
-    &__grid {
-        display: grid;
-        grid-gap: 4rem;
-        grid-template-columns: repeat(auto-fill, 15rem);
-        justify-content: center;
-        align-items: center;
-
-        &__card {
-            background-color: white;
-            transition: all .1s;
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-            height: 20rem;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            &:hover { transform: scale(1.2); }
-
-            &--icon {
-                height: 10rem;
-                width: 10rem;
-            }
-
-            &--label {
-                display: block;
-                padding: .5rem;
-                color: white;
-                border: 1px solid black;
-                background-color: #23236b;
-                margin-top: 3rem;
-            }
-        }
-    }
+  }
 }
