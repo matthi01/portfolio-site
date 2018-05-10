@@ -14,6 +14,7 @@ $color-test-dark: rgb(13, 0, 129);
   grid-column: sidebar-start / full-end;
   grid-row: 4;
 
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 
   &__title {

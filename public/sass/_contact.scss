@@ -3,6 +3,7 @@
     rgba($color-test-light, 0.7),
     rgba($color-test-dark, 0.7)
   );
+  -webkit-clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
   clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 
   color: black;
