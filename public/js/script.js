@@ -30,6 +30,40 @@ const sendEmail = e => {
   window.location.href = `mailto:${email}?subject=${subject}`;
 };
 
+const expandCard = event => {
+  //get the closest flip card / both front and back
+  let target = event.target.closest(".flip");
+
+  if (!target) return;
+
+  let front = target.children[0];
+  let back = target.children[1];
+
+  front.classList.toggle("close");
+  back.classList.toggle("expand");
+
+  event.stopPropagation();
+};
+
+const collapseCards = event => {
+  let cardsFront = document.querySelectorAll(".experience__grid__card--front");
+  let cardsBack = document.querySelectorAll(".experience__grid__card--back");
+
+  cardsFront.forEach(el => {
+    el.classList.remove("close");
+  });
+
+  cardsBack.forEach(el => {
+    el.classList.remove("expand");
+  });
+};
+
+const closeActions = event => {
+  closeSidebar();
+  collapseCards();
+  event.stopPropagation();
+};
+
 // EVENT LISTENERS
 document
   .querySelector(".sidebar__icon")
@@ -43,4 +77,8 @@ document
   .querySelector(".sidebar__items")
   .addEventListener("click", event => event.stopPropagation(), false);
 
-document.addEventListener("click", closeSidebar, false);
+document
+  .querySelector(".experience__grid")
+  .addEventListener("click", expandCard, false);
+
+document.addEventListener("click", closeActions, false);
