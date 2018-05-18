@@ -108,6 +108,10 @@ $color-test-dark: rgb(13, 0, 129);
     transform: rotateY(90deg);
     z-index: 10;
 
+    &--extended {
+      height: 40rem;
+    }
+
     a {
       color: white;
       font-weight: bold;
