@@ -30,17 +30,19 @@ const sendEmail = e => {
   window.location.href = `mailto:${email}?subject=${subject}`;
 };
 
-const expandCard = event => {
+const cardClickHandler = event => {
   //get the closest flip card / both front and back
   let target = event.target.closest(".flip");
 
   if (!target) return;
 
+  collapseCards();
+
   let front = target.children[0];
   let back = target.children[1];
 
-  front.classList.toggle("close");
-  back.classList.toggle("expand");
+  front.classList.add("close");
+  back.classList.add("expand");
 
   event.stopPropagation();
 };
@@ -79,6 +81,6 @@ document
 
 document
   .querySelector(".experience__grid")
-  .addEventListener("click", expandCard, false);
+  .addEventListener("click", cardClickHandler, false);
 
 document.addEventListener("click", closeActions, false);
