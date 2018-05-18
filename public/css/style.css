@@ -74,45 +74,15 @@ body {
     grid-template-columns: repeat(auto-fill, 15rem);
     justify-content: center;
     align-items: center; }
-    .experience__grid__card {
-      background-image: linear-gradient(to top, silver, white);
-      background-size: cover;
-      background-repeat: no-repeat;
-      transition: all 0.1s;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-      height: 20rem;
-      font-size: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 0;
-      position: relative; }
-      .experience__grid__card:hover {
-        transform: scale(1.2); }
-      .experience__grid__card--icon {
-        height: 10rem;
-        width: 10rem; }
-      .experience__grid__card--label {
-        display: block;
-        padding: 0.5rem;
-        color: white;
-        border: 1px solid black;
-        background-color: #23236b;
-        margin-top: 3rem; }
-      .experience__grid__card--flip-icon {
-        position: absolute;
-        left: 12.8rem;
-        top: 0.5rem;
-        height: 1.5rem;
-        width: 1.5rem; }
 
 .flip {
   position: relative;
   height: 20rem; }
 
 .experience__grid__card--front {
-  background-color: white;
+  background-image: linear-gradient(to top, rgba(124, 124, 124, 0.603), white);
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: all 0.1s;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   height: 20rem;
@@ -122,7 +92,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: absolute; }
+  position: relative; }
   .experience__grid__card--front:hover, .experience__grid__card--front:active {
     transform: scale(1.2); }
   .experience__grid__card--front--icon {
@@ -132,15 +102,15 @@ body {
     display: block;
     padding: 0.5rem;
     color: white;
-    border: 1px solid black;
-    background-color: #23236b;
+    border: 1px solid white;
+    background-color: #474747;
     margin-top: 3rem; }
   .experience__grid__card--front--flip-icon {
     position: absolute;
-    left: 11.7rem;
-    top: 1rem;
-    height: 2.5rem;
-    width: 2.5rem; }
+    left: 12.8rem;
+    top: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem; }
 
 .experience__grid__card--back {
   background-color: black;
@@ -157,7 +127,15 @@ body {
     color: white;
     border: 1px solid black;
     background-color: #23236b;
-    margin-top: 3rem; }
+    margin-top: 4rem; }
+  .experience__grid__card--back--close-icon {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    left: 26.5rem;
+    top: 0.8rem; }
+    .experience__grid__card--back--close-icon:active {
+      transform: translateY(2px); }
   .experience__grid__card--back--body {
     margin: 2rem;
     color: white; }

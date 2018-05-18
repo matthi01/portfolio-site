@@ -60,6 +60,18 @@ const collapseCards = event => {
   });
 };
 
+const closeCard = event => {
+  let target = event.target.closest(".flip");
+
+  let front = target.children[0];
+  let back = target.children[1];
+
+  front.classList.remove("close");
+  back.classList.remove("expand");
+
+  event.stopPropagation();
+};
+
 const closeActions = event => {
   closeSidebar();
   collapseCards();
@@ -78,6 +90,13 @@ document
 document
   .querySelector(".sidebar__items")
   .addEventListener("click", event => event.stopPropagation(), false);
+
+const closeIcons = document.querySelectorAll(
+  ".experience__grid__card--back--close-icon"
+);
+closeIcons.forEach(el => {
+  el.addEventListener("click", closeCard, false);
+});
 
 document
   .querySelector(".experience__grid")
