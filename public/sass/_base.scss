@@ -10,9 +10,10 @@ $color-text-link: #551a8b;
 $box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 
 // RESPONSIVE BREAKPOINTS
-$bp-xlarge: 81.25em; // 1300 px
+$bp-xlarge: 81.5em; // 1300 px
 $bp-large: 69.375em; // 1110 px
 $bp-medium: 56.25em; // 900 px
+$bp-medium2: 49.375em; // 790 px
 $bp-small: 46.875em; // 750 px
 $bp-xsmall: 37.5em; // 600 px
 $bp-xxsmall: 36.325em; // 580 px
@@ -56,7 +57,7 @@ body {
   //   60vh 20vh 100rem minmax(50vh, max-content) minmax(50vh, min-content)
   //   40vh 20vh;
   grid-template-rows:
-    60vh 20vh 100rem 110rem minmax(50vh, min-content)
+    60vh 20vh 120rem 110rem minmax(50vh, min-content)
     40vh 20vh;
   grid-template-columns:
     [sidebar-start] 8rem
@@ -66,37 +67,49 @@ body {
 
   @media only screen and (max-width: $bp-xlarge) {
     grid-template-rows:
-      60vh 20vh 112rem 125rem minmax(50vh, min-content)
+      60vh 20vh 150rem 125rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows:
+      60vh 20vh 150rem 125rem minmax(50vh, min-content)
       40vh 20vh;
   }
 
   @media only screen and (max-width: $bp-medium) {
     grid-template-rows:
-      60vh 20vh 112rem 145rem minmax(50vh, min-content)
+      60vh 20vh 190rem 145rem minmax(50vh, min-content)
+      40vh 20vh;
+  }
+
+  @media only screen and (max-width: $bp-medium2) {
+    grid-template-rows:
+      60vh 20vh 220rem 145rem minmax(50vh, min-content)
       40vh 20vh;
   }
 
   @media only screen and (max-width: $bp-small) {
     grid-template-rows:
-      60vh 20vh 166rem 175rem minmax(50vh, min-content)
+      60vh 20vh 220rem 175rem minmax(50vh, min-content)
       40vh 20vh;
   }
 
   @media only screen and (max-width: $bp-xsmall) {
     grid-template-rows:
-      60vh 20vh 205rem 190rem minmax(50vh, min-content)
+      60vh 20vh 240rem 180rem minmax(50vh, min-content)
       40vh 20vh;
   }
 
   @media only screen and (max-width: $bp-xxsmall) {
     grid-template-rows:
-      60vh 20vh 205rem 250rem minmax(50vh, min-content)
+      60vh 20vh 290rem 250rem minmax(50vh, min-content)
       40vh 20vh;
   }
 
   @media only screen and (max-width: $bp-xxxsmall) {
     grid-template-rows:
-      60vh 20vh 250rem 430rem minmax(50vh, min-content)
+      60vh 20vh 290rem 270rem minmax(50vh, min-content)
       40vh 20vh;
   }
 }

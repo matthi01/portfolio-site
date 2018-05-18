@@ -98,7 +98,7 @@ $color-test-dark: rgb(13, 0, 129);
   }
 
   &--back {
-    background-color: black;
+    background-color: rgb(63, 59, 66);
     box-shadow: $box-shadow;
     height: 20rem;
     font-size: 1.5rem;
@@ -106,12 +106,20 @@ $color-test-dark: rgb(13, 0, 129);
     height: 30rem;
     float: left;
     transform: rotateY(90deg);
+    z-index: 10;
+
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
 
     &--label {
       display: block;
       padding: 0.5rem;
       color: white;
-      border: 1px solid black;
+      border-top: 1px solid rgb(185, 185, 185);
+      border-bottom: 1px solid rgb(185, 185, 185);
       background-color: #23236b;
       margin-top: 4rem;
     }
@@ -137,7 +145,6 @@ $color-test-dark: rgb(13, 0, 129);
 .expand {
   animation: twirl 0.2s 0.2s ease-out forwards reverse;
   position: absolute;
-  z-index: 100;
   top: -25%;
   left: -50%;
 }
